@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="form-wrapper">
+        <header>
+          <img src="./images/Pianist.png" alt="Hands playing the piano" />
+          <div class="titlebox">
+            <h1>Music School Registration</h1>
+            <p>Register to our music school from below</p>
+          </div>
+        </header>
+        <form action="https://httpbin.org/anything" method="post">
+          <div class="name box">
+            <h3>Name</h3>
+            <div class="firstname">
+              <label for="firstname">Firstname</label>
+              <input
+                type="text"
+                name="firstname"
+                autocomplete
+                autofocus
+                required
+              />
+            </div>
+
+            <div class="lastname">
+              <label for="lastname">Lastname</label>
+              <input type="text" name="lastname" autocomplete required />
+            </div>
+          </div>
+          <div class="login box">
+            <h3>Login</h3>
+
+            <div class="email">
+              <label for="email">E-mail</label>
+              <input
+                name="email"
+                type="email"
+                placeholder="kalle@stropp.se"
+                autocomplete
+                required
+              />
+            </div>
+
+            <div class="password">
+              <label for="password">Password</label>
+              <input
+                name="password"
+                type="password"
+                placeholder="Grodan_boll123"
+                autocomplete
+                required
+              />
+            </div>
+          </div>
+
+          <div class="skill-level">
+            <h3>Your Skill Level</h3>
+
+            <label for="beginner">
+              <input
+                type="radio"
+                name="skill-level"
+                id="beginner"
+                checked
+              />Beginner</label
+            >
+            <br />
+
+            <label for="intermediate"
+              ><input
+                type="radio"
+                name="skill-level"
+                id="intermediate"
+              />Intermediate</label
+            ><br />
+
+            <label for="advanced"
+              ><input
+                type="radio"
+                name="skill-level"
+                id="advanced"
+              />Advanced</label
+            >
+          </div>
+
+          <div class="instrument box">
+            <h3>Choose an Instrument</h3>
+            <label for="inst-select"></label>
+            <select name="inst-select" id="inst-select" required>
+              <option value="">Please select</option>
+              <option value="piano">Piano</option>
+              <option value="guitar">Guitar</option>
+              <option value="violin">Violin</option>
+              <option value="drums">Drums</option>
+              <option value="trombone">Trombone</option>
+              <option value="trumpet">Trumpet</option>
+            </select>
+          </div>
+
+          <div class="genre">
+            <h3>Favorite Genre(s)</h3>
+            <label for="rock">Rock</label>
+            <input
+              id="rock"
+              type="checkbox"
+              name="genre"
+              value="rock"
+              checked
+            />
+            <label for="pop">Pop</label>
+            <input id="pop" type="checkbox" name="genre" value="pop" />
+
+            <label for="classical">Classical</label>
+            <input
+              id="classical"
+              type="checkbox"
+              name="genre"
+              value="classical"
+            />
+            <label for="other">Other</label>
+            <input id="other" type="checkbox" name="genre" value="other" />
+          </div>
+
+          <div class="file">
+            <h3>
+              Share Demo
+              <small
+                ><sup
+                  ><em
+                    >feel free to send in an audio file of your performance
+                    <strong>(optional)</strong></em
+                  ></sup
+                ></small
+              >
+            </h3>
+
+            <label for="file"></label>
+            <input type="file" id="file" name="file" />
+          </div>
+
+          <div class="message">
+            <h3>Comments</h3>
+            <textarea name="message" id="message"></textarea><br />
+            <label for="message"></label>
+          </div>
+
+          <div class="submit">
+            <button
+              type="submit"
+              onclick="alert('Thank you for your registration!')"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
