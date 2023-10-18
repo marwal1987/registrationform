@@ -12,20 +12,21 @@ body {
   padding: 1rem;
   width: 100%;
   color: #292004;
-  background-color: hsl(150, 30%, 70%);
+  background-color: #9fcfc1;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  max-width: 100%;
 }
 
 header {
   width: 100%;
   grid-column: 2;
   color: #292004;
-  background-color: hsla(30, 29%, 70%, 0.7);
+  background-color: #2920045f;
   display: grid;
   grid-template-columns: 350px 50px 350px 50px;
   grid-template-rows: repeat(4, 100px);
@@ -48,6 +49,7 @@ img {
   grid-column: 2;
   background-color: #f5f6f7;
   box-shadow: 0px 0px 8px black;
+  max-width: 100%;
 }
 
 form {
